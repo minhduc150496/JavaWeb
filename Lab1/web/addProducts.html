@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Add Product</h1>
+        <form action="processServlet" method="POST">
+            Code:  <input type="text" name="code" value="" size="50" /><br/><br/>
+            Name:  <input type="text" name="name" value="" size="100" /><br/><br/>
+            Description:  <textarea cols="100" rows="5"  name="des" ></textarea><br/><br/>
+            Price: <input type="text" name="price" value="" size="20" />(USD)<br/><br/>
+            Category: <select name="category">
+                <option>Beverage</option>
+                <option>Food</option>
+                <option>Meat</option>
+                <option>Vegetables</option>
+            </select><br/><br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="submit" value="Save" name="save" />
+            <input type="reset" value="Reset" name="reset" />
+        </form><br/><br/>
+        <a href="index.html">Homepage</a>
+
+    </body>
+</html>

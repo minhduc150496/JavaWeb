@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Profile</h1>
+        <form action="ProfileUpdateServlet" method="POST">
+            Username: <input type="text" name="txtUsername" value="" /><br>
+            New password: <input type="password" name="txtPassword" value="" /><br>
+            Confirm password: <input type="password" name="txtConfirm" value="" /><br>
+            Last name: <input type="text" name="txtLastname" value="" /><br>
+            Is admin: <input type="checkbox" name="chkAdmin" value="ON"/><br>
+            <input type="submit" name="btAction" value="Submit" />
+            <input type="reset" value="Reset" />
+        </form>
+    </body>
+</html>

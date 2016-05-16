@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add New Products</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            table td:first-child {
+                width: 100px;
+                text-align: right;
+            }
+            .buttons {
+                text-align: center;
+            }
+            textarea {
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Add Products</h1>
+        <form action="ProcessServlet">
+            <table>
+                <tr>
+                    <td>
+                        Code: 
+                    </td>
+                    <td>
+                        <input type="text" name="txtCode" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Name: 
+                    </td>
+                    <td>
+                        <input type="text" name="txtName" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Description:  
+                    </td>
+                    <td>
+                        <textarea name="txtDescription" rows="10" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Price: 
+                    </td>
+                    <td>
+                        <input type="text" name="txtPrice" value="" /> (USD) 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Category: 
+                    </td>
+                    <td>
+                        <select name="selCategory">
+                            <option>Beverage</option>
+                            <option>Food</option>
+                            <option>Meat</option>
+                            <option>Vegetables</option>
+                        </select>    
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>       
+                        <div class="buttons">
+                            <input type="submit" name="btAction" value="Save" />
+                            <input type="reset" value="Reset" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <a href="index.html">Home page</a>
+    </body>
+</html>
