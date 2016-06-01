@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Lab07">
+  <Resource  
+        name="SE1066DS" 
+        type="javax.sql.DataSource" 
+        auth="Container" 
+        driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        username="sa"
+        password="123456" 
+        url="jdbc:sqlserver://localhost:1433;databaseName=UserDB;instanceName=DUCBMSE61791" 
+        />
+</Context>
